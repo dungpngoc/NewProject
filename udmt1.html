@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<table>
+  <th>Caculator</th>
+  <tr>
+    <td colspan="2"> <input type="text" id="nb1" placeholder="Nhập số thứ nhất"></td>
+    <td colspan="2"> <input type="text" id="nb2" placeholder="Nhập số thứ hai"></td>
+  </tr>
+  <tr>
+    <td><button onclick="Audition()">Audition(+)</button></td>
+    <td><button onclick="Subtraction()">Subtraction(-)</button></td>
+    <td><button onclick="Multiplication()">Multiplication(x)</button></td>
+    <td><button onclick="Division()">Division(/)</button></td>
+  </tr>
+</table>
+<br>
+<p id="ketqua"></p>
+<script>
+  function Audition() {
+    let ns1 = document.getElementById("nb1").value;
+    let ns2 = document.getElementById("nb2").value;
+    let ketqua = Number(ns1) + Number(ns2);
+    document.getElementById("ketqua").innerHTML = "Kết quả cộng =" + ketqua;
+  }
+  function Subtraction() {
+    let ns1 = document.getElementById("nb1").value;
+    let ns2 = document.getElementById("nb2").value;
+    let ketqua = Number(ns1) + Number(ns2);
+  document.getElementById("ketqua").innerHTML = "Kết quả trừ =" + ketqua;
+  }
+    function Multiplication() {
+    let ns1 = document.getElementById("nb1").value;
+    let ns2 = document.getElementById("nb2").value;
+    let ketqua = Number(ns1) + Number(ns2);
+  document.getElementById("ketqua").innerHTML = "Kết quả nhân =" + ketqua;
+    }
+  function Division() {
+    let ns1 = document.getElementById("nb1").value;
+    let ns2 = document.getElementById("nb2").value;
+    let ketqua = Number(ns1) + Number(ns2);
+  document.getElementById("ketqua").innerHTML = "Kết quả chia =" + ketqua;
+  }
+</script>
+
+</body>
+</html>
