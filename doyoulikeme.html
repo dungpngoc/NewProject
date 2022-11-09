@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Do you like me?</h1>
+<input  type="button" value="Yes" onclick="check1()">
+<input id="chuot" type="button" value="No" onmouseover="loan()" style= "position: absolute; left: 27px; top: 147px;">
+
+<script>
+function check1() {
+    alert("Yes , you are right");
+}
+function loan() {
+    var x = Math.round(Math.random() * window.innerWidth);
+    var y = Math.round(Math.random() * window.innerHeight);
+    document.getElementById("chuot").style.left = x + 'px';
+    document.getElementById("chuot").style.top = y + 'px';
+}
+</script>
+
+</body>
+</html>
