@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let year = +prompt("Nhap so nam");
+  let a = ( year % 4 == 0);
+  let b = (year % 100 == 0);
+  let b1 = (year % 100 !== 0);
+  let c = (year % 400 ==0);
+  let c1 = (year % 400 !==0);
+  if (a && b1) {
+    alert("is a leap year");
+  }
+  else if (b && c) {
+    alert("is a leap year")
+  }
+  else {
+    alert("is not a leap year")
+  }
+</script>
+</body>
+</html>
