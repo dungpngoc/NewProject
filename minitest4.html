@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>minitest4 - a</title>
 </head>
 <body>
-
+ <p> <input type="Number" id="nsa" placeholder="Nhập số a"></p>
+<p><button onclick="PS()">Ketqua</button> </p>
+ <p id="ketqua"></p>
+ <p id="ketqua1"></p>
+<script>
+    function PS() {
+        let a = document.getElementById("nsa").value;
+        let chuvi = Number(a) * 4;
+        document.getElementById("ketqua").innerHTML = "Chu vi hình vuông là " + chuvi;
+        let b = document.getElementById("nsa").value;
+        let dientich = Number(b)**2;
+        document.getElementById("ketqua1").innerHTML = "Diện tích hình vuông là " + dientich;
+    }
+</script>
 </body>
 </html>
