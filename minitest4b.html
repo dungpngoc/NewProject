@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>minitest4b</title>
 </head>
 <body>
-$END$
+<p> <input type="Number" id="a" placeholder="Nhập số a"></p>
+<p> <input type="Number" id="b" placeholder="Nhập số b"></p>
+<p><button onclick="clickP()">Ketqua</button> </p>
+<p id="ketqua"></p>
+<p id="ketqua1"></p>
+<script>
+    function clickP() {
+        let giatria = document.getElementById("a").value;
+        let giatrib = document.getElementById("b").value;
+        let e = Number(giatria) ** 2;
+        document.getElementById("ketqua").innerHTML = "a**2= " + e;
+        let g = Number(giatria) ** Number(giatrib);
+        document.getElementById("ketqua1").innerHTML = "a**b= " + g;
+    }
+</script>
 </body>
 </html>
