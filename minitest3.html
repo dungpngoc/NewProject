@@ -5,19 +5,19 @@
     <title>minitest 3</title>
 </head>
 <body>
-<table>
+<table>     // tạo bảng và tạo 2 thẻ td để nhập số trong đó có gán kiểu Number và địa chỉ là nb1 nb2
     <td><input type="Number" id="nb1" placeholder="Nhập số thứ nhất"></td>
     <td><input type="Number" id="nb2" placeholder="Nhập số thứ hai"></td>
-    <td><button onclick="Nhân()">Nhân</button></td>
+    <td><button onclick="Nhân()">Nhân</button></td>   // tạo button có nút onclick
 </table>
 <br>
-<h1 id="ketqua"></h1>
-<script>
+<h1 id="ketqua"></h1> // tạo thẻ h1 có địa chỉ ketqua để in ra
+<script> // tạo js và có function phép nhân của thẻ button
 function Nhân() {
-    let nb1 = document.getElementById("nb1").value;
+    let nb1 = document.getElementById("nb1").value;     // khai báo biến nb1 và nb2( kết quả nhân là nb1*nb2)
     let nb2 = document.getElementById("nb2").value;
     let Ketqua = Number(nb1) * Number(nb2);
-    document.getElementById("ketqua").innerHTML = "Kết quả nhân là: " + Ketqua;
+    document.getElementById("ketqua").innerHTML = "Kết quả nhân là: " + Ketqua; // in ra màn hình phép nhân bằng cú pháp bên
 }
 </script>
 </body>
