@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minitest 3</title>
+</head>
+<body>
+<table>
+    <td><input type="Number" id="nb1" placeholder="Nhập số thứ nhất"></td>
+    <td><input type="Number" id="nb2" placeholder="Nhập số thứ hai"></td>
+    <td><button onclick="Nhân()">Nhân</button></td>
+</table>
+<br>
+<h1 id="ketqua"></h1>
+<script>
+function Nhân() {
+    let nb1 = document.getElementById("nb1").value;
+    let nb2 = document.getElementById("nb2").value;
+    let Ketqua = Number(nb1) * Number(nb2);
+    document.getElementById("ketqua").innerHTML = "Kết quả nhân là: " + Ketqua;
+}
+</script>
+</body>
+</html>
