@@ -5,18 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<input type="Number" id="nba" placeholder="Nhập số tuổi">
+<input type="Number" id="nba" placeholder="Nhập điểm kiểm tra">
+<input type="Number" id="nbb" placeholder="Nhập điểm thi giữ kì">
+<input type="Number" id="nbc" placeholder="Nhập điểm thi cuối kì">
 <button onclick="kiemtra()">Kiểm tra</button>
 <p id="ketqua"></p>
 <script>
   function kiemtra() {
-    let tuoi = document.getElementById("nba").value;
-    if(tuoi < 16 ) {
-      document.getElementById("ketqua").innerHTML = tuoi + " ko đủ điều kiện vào lớp 10)"
-    }else{
-      document.getElementById("ketqua").innerHTML = tuoi + " đủ điều kiện vào lớp 10"
+    let soa = +document.getElementById("nba").value;
+    let sob = +document.getElementById("nbb").value;
+    let soc = +document.getElementById("nbc").value;
+    let diemtong = (soa + sob*2 + soc*3)/6;
+    if(diemtong<10 && diemtong>8) {
+      document.getElementById("ketqua").innerHTML = "xếp loại giỏi "
+    }else if (diemtong<8 && diemtong >6) {
+        document.getElementById("ketqua").innerHTML = "xếp loại khá";
     }
-  }
+    else {
+        document.getElementById("ketqua").innerHTML = "xếp loại trung bình"
+    }
+    }
+
 </script>
 </body>
 </html>
