@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau.
+      Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+      Sau khi thực thi chương trình sẽ trả về dạng như sau : "Red,Green,White,Black"
+      Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn.
+      Ví dụ nếu bạn nhập vào 025468 thì kết quả của chương trình sẽ là 0-254-6-8.
+        Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa.
+        Ví dụ: nếu bạn nhập vào chuỗi 'The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX'.
+
+
+
+    </title>
+</head>
+<body>
+<script>
+  /*let myColor = ["Red", "Green", "White", "Black"];    //Bai 1
+  console.log(myColor.join())
+
+  console.log(["Red", "Green", "White", "Black"].toString())
+*/
+/*
+  let num= +prompt("Nhập dãy số");                        // Bai 2
+let a = num.toString();
+let result = [a[0]];
+    for (let i = 0;i<a.length;i++){
+        if (a[i]%2==0 && a[i+1]%2==0){
+            result.push("-" , a[i+1])
+        }else {
+            result.push(a[i+1])
+        }
+    }
+    document.write(result.join(""));
+
+
+  /*let a = +prompt("Nhap so");
+  let b = a.toString()
+  let c = [b[0]]
+  for (x=1;x<b.length;x++){
+      if (b[x]%2==0 && b[x-1]%2==0){
+          c.push("-",b[x])
+      }else{
+          c.push(b[x])
+      }
+  }
+  document.write(c.join("")) */
+
+                                                        // Bai 3
+let c = prompt("Nhap chu")
+  let a = c
+let UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let lower = "abcdefghijklmnopqrstuvwxyz";
+let result = []
+for (i=0;i<a.length;i++){
+    if (UPPER.indexOf(a[i]) !== -1){
+        result.push(a[i].toLowerCase())
+    }else if (lower.indexOf(a[i]) !== -1){
+        result.push(a[i].toUpperCase())
+    }else {
+        result.push(a[i])
+    }
+}
+document.write(result.join(""))
+
+</script>
+</body>
+</html>
