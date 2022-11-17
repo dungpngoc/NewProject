@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Từ điển</title>
+</head>
+<body>
+<input id ="String" type="text">
+<button onclick="Translate()" >Dịch</button>
+<p id="Result" ></p>
+<script>
+  function Translate(){
+    let arrEng = ["banana", "apple", "orange", "pen", "pencil", "book"];
+    let arrVie = ["chuối", "táo", "cam", "bút", "bút chì", "sách"];
+    let string = document.getElementById("String").value;
+    let result = "";
+    for (let i=0;i<arrEng.length;i++){
+            if (string === arrEng[i]){
+                result = arrVie[i];
+            }
+    }
+      document.getElementById("Result").innerHTML = result;
+  }
+</script>
+</body>
+</html>
