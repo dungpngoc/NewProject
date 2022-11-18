@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.
+    //  Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.
+
+    // let array = [2,31,4,5,12,23,4,23,12,32,43,3]
+  // let count = 0;
+  // for (i=0;i<array.length;i++){
+  //   if (array[i]>10){
+  //     count=count + 1
+  //   }
+  // }
+  // document.write(count)
+
+
+//   Bài 2Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+ // Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+
+
+
+// let array = [2,31,4,5,12,23,4,23,12,32,43,3]
+// let max = array[0]
+//   let index;
+// for (i=0;i<array.length;i++){
+//   if (max<array[i]){
+//     max = array[i]
+//       index = i
+//   }
+// }
+// document.write("Số lớn nhất là: " + max + " Vị trí "+ index)
+
+// Bài 3Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó.
+ // In ra giá trị trung bình của các phần tử trong mảng.
+//
+//   let array = [2,31,4,5,12,23,4,23,12,32,43,3];
+//   let max = array[0];
+//   let index
+//   let sum=0
+//   let tbsum
+//   for (i=0;i<array.length;i++){
+//      sum += array[i]
+//       if (max<array[i]){
+//           max = array[i]
+//           index = i
+//       }
+//   }
+//   tbsum = sum/i
+//   document.write(("Số lớn nhất là: " + max + " Giá trị trung bình là "+ tbsum + " Vị trí "+ index))
+
+ //  Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+ //
+ //    let array = ["Tao","Khong","Biet"];
+ //    a= array.reverse()
+ //    document.write(a)
+
+
+    // Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi
+    // let array = [2,-31,-4,5,-12,23,4,-23,12,-32,43,3];
+    // let count = 0;
+    // for (i=0;i<array.length;i++){
+    //     if (array[i]<0){
+    //         count = count + 1
+    //     }
+    // }
+    // document.write(count)
+
+    // Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    //     Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra
+    // "V is in the array" còn lại in ra "V is not in the array".
+
+    // let a = + prompt("Nhap so")
+    // let array = [2,-31,-4,5,-12,23,4,-23,12,-32,43,3];
+    // for (i=0;i<array.length;i++){
+    //     if (a === array[i]){
+    //         alert("V is in the array");
+    //         break;
+    //     }else{
+    //         alert("V is not in the array")
+    //         break;
+    //     }
+    // }
+
+    // Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    //     Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    // (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+
+
+    // let V = + prompt("inputV");
+    // let array = [2,-31,-4,5,-12,23,4,-23,12,-32,43,3,];
+    //
+    // for (i=0;i<array.length;i++){
+    //     if (V === array[i]){
+    //         let index = i
+    //         array.splice(index,1)
+    //         array.push(0)
+    //     }
+    // }
+    // console.log(array)
+
+    // Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+    //    Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    //
+    // let array = [2,-31,-4,5,-12,23,4,-23,12,-32,43,3,];
+    // array.sort(function (a,b) {return a-b})
+    // console.log(a)
+
+    // cách 2
+    // let array = [2,-31,-4,5,-12,23,4,-23,12,-32,43,3,]
+    // function interChangeSort(array) {
+    //     for (let i = 0; i < array.length-1;i++){
+    //         for (j=i+1;j<array.length;j++){
+    //             if (array[i]>array[j]){
+    //                 let t = array[i];
+    //                 array[i] = array[j]
+    //
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    // Bài 9- Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+    //     Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+    //     Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.
+
+    let array1 = [2,-31,-4,5,-12,23,4,-23,12,-32]
+    let array2 = [6,-31,-7,5,-15,23,9,-83,2,-32]
+    let array3 = [2,-31,-4,5,-12,23,4,-23,12,-32,6,-31,-7,5,-15,23,9,-83,2,-32]
+    let g = array1.concat(array2);
+    let e = array3.concat(g);
+    console.log(e)
+
+
+
+
+</script>
+</body>
+</html>
